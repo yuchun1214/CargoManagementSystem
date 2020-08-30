@@ -1,0 +1,29 @@
+table, th{
+    font-size:15px;
+    font-weight: 250;
+    font-family: "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue";
+    border:1px solid;
+    border-color:lightgrey;
+    width:100%;
+}
+
+tbody{
+    width:inherit;
+}
+
+th{
+    /* height:3em; */
+
+    width:5%;
+    padding-right:5px;
+    padding-left:5px;
+    /* width:150px; */
+}
+
+td{
+    border:1px solid;
+    border-color: lightgrey;
+    height:2.5em;
+    padding-right: 5px;
+    padding-left: 5px;
+}

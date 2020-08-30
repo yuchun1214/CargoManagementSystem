@@ -1,0 +1,34 @@
+#content{
+    width:60%;
+    margin:auto;
+    margin-top:80px;
+}
+
+.divider{
+    border:1px solid #707070;
+
+}
+
+#add{
+    width:10%;
+    margin-left:90%;
+}
+
+#addimg{
+    border-radius: 5px;
+}
+
+#addimg:hover{
+    background-color:lightgrey;
+    transition: .8s ease;
+}
+
+.item{
+    background-color: white;
+    outline: none;
+    border:none;
+}
+
+#table{
+    margin-top: 30px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./cargo.css">
+    <link rel="stylesheet" href="./table.css">
+    <title>Cargo</title>
+</head>
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add Item</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form action="" id="addItemForm">
+                    <div class="form-group">
+                        <label for="itemName">Name</label>
+                        <input type="text" class="form-control" id="itemName">
+                    </div>
+                    <div class="form-group">
+                        <label for="itemUnit">Unit</label>
+                        <input type="text" class="form-control" id="itemUnit">
+                    </div> 
+                    <div class="form-group">
+                        <label for="itemAmount">Amount</label>
+                        <input type="number" class="form-control" id="itemAmount">
+                    </div>
+                    <div class="form-group">
+                        <label for="itemPrice">Price</label>
+                        <input type=number class="form-control" id="itemPrice">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+     </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">倉儲貨物及客戶管理系統</a>
+    </nav>
+    <div id="content">
+        <h3>Cargo Management System</h3>
+        <div class="functions">
+            <div id="add">
+                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                    <img src="./plus.png" alt="" width=30 id="addimg">
+                </button>
+
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Unit</th>
+                    <th>Amount</th>
+                    <th>Price</th>
+                    <th>Modify</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr1 num">
+                    <th><input type="text" class="item" name="" id="" value="MgO" readonly></th>
+                    <th><input type="text" class="item" name="" id="" value="100g" readonly></th>
+                    <th><input type="text" class="item" name="" id="" value="50" readonly></th>
+                    <th><input type="text" class="item" name="" id="" value="20" readonly></th>
+                    <th><img src="./pencil.png" alt="" srcset="" width="20"></th>
+                </tr>
+                <tr class="tr1 num">
+
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+</body>
+
+    <script src="../jquery/jquery-3.4.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+</html>
